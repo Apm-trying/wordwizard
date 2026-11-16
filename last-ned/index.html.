@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last ned The Word Wizard</title>
+<meta name="description" content="Last ned The Word Wizard – gratis ordforråd-RPG for iPhone og Android.">
+<meta property="og:title" content="Last ned The Word Wizard">
+<meta property="og:description" content="Gratis ordforråd-RPG for iPhone og Android.">
+<meta property="og:image" content="https://apm-trying.github.io/wordwizard/img/share.jpg">
+<link rel="icon" href="../img/favicon-48.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<script>
+  // Sends phones straight to the right store; computers see both buttons.
+  (function () {
+    var IOS = 'https://apps.apple.com/app/id6819788001';
+    var ANDROID = 'https://play.google.com/store/apps/details?id=com.jhelvig.wordwizard';
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/i.test(ua);
+    if (isIOS) location.replace(IOS);
+    else if (isAndroid) location.replace(ANDROID);
+  })();
+</script>
+<style>
+  :root { --bg: #12151d; --cream: #f3ebdd; --gold: #c9a13b; --ink: #201c14; --grey: #9a9fae; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--cream);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         display: flex; align-items: center; justify-content: center; padding: 24px 16px; text-align: center; }
+  main { max-width: 420px; width: 100%; }
+  img.icon { width: 96px; height: 96px; border-radius: 22px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; letter-spacing: .06em; font-size: 30px; margin: 16px 0 6px; }
+  p { color: var(--grey); margin: 0 0 24px; }
+  a.btn { display: block; margin: 12px 0; padding: 15px 18px; border-radius: 14px; background: var(--gold);
+          color: var(--ink); font-weight: 700; text-decoration: none; font-size: 17px; }
+  a.btn:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+  a.home { color: var(--cream); font-size: 14px; display: inline-block; margin-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="../img/icon-192.png" alt="">
+  <h1>WORD WIZARD</h1>
+  <p>Gratis · ingen reklame · ingen kjøp<br>Free · no ads · no purchases</p>
+  <a class="btn" href="https://apps.apple.com/app/id6819788001">Last ned i App Store</a>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.jhelvig.wordwizard">Last ned på Google Play</a>
+  <a class="home" href="../">Les mer om spillet / About the game</a>
+</main>
+</body>
+</html>
